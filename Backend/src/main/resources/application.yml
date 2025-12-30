@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:sqlserver://localhost:1433;databaseName=demo_db;encrypt=true;trustServerCertificate=true
+    username: sa
+    password: TuPassword
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+
+security:
+  jwt:
+    secret: CLAVE_SUPER_SECRETA_CAMBIAR_256_BITS_MINIMO_1234567890
